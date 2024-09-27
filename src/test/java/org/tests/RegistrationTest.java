@@ -19,6 +19,9 @@ public class RegistrationTest {
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless"); // Run in headless mode
+        options.addArguments("--no-sandbox"); // Recommended for CI environments
+        options.addArguments("--disable-dev-shm-usage"); // Overcomes limited resource problems
         options.addArguments("--disable-extensions"); // Disable extensions
 
         WebDriverManager.chromedriver().setup();  // Set up the WebDriver

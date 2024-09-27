@@ -36,7 +36,7 @@ public class RegistrationTest {
     @Test
     public void testRegistrationFormValidation() {
         // Navigate to the website
-        registrationPage.navigateTo(" https://moneygaming.qa.gameaccount.com/");
+        registrationPage.navigateTo("https://moneygaming.qa.gameaccount.com/");
 
         // Click JOIN NOW
         registrationPage.clickJoinNow();

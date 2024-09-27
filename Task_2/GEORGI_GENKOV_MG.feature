@@ -6,6 +6,11 @@ Feature: User Registration - Password Requirements
 
   Background:
     Given I am on the registration page
+    And I have filled in the Title with "Mr."
+    And I have entered "Steve" as my First Name
+    And I have entered "Smith" as my Surname
+    And I have entered "2000-01-01" as my Date of Birth
+    And I have accepted the Terms and Conditions
 
   Scenario: Successful registration with a valid password
     When I enter "Password$6" as my password
